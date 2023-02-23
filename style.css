@@ -1,0 +1,320 @@
+body{
+    font-family: 'Roboto Slab', serif;
+
+}
+
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+
+.caixa{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+nav{
+    display: flex;
+    
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+
+}
+
+
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+#caracter{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+nav a:hover {
+    color: red;
+    text-decoration: underline;
+    font-size: 35px;
+}
+
+
+#motor{
+    border: 5px;
+    border-color: black;
+}
+
+
+.produtos{
+    
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.produtos li{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 0px 20px 20px 20px;
+    /*border: 5px double black; (outra possibilidade de aplicar borda de mmaneira resumida*/
+
+}
+
+.produtos li:hover{
+    border-color: red;
+
+}
+.produtos li:active{
+    border-style: double;
+    border-width: 5px;
+}
+.produtos li:hover h2{
+    font-size: 40px;
+
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 0 15px 0;
+}
+
+.produtoDescricao{
+    font-size: 18px;
+    margin-top: 15px;
+
+}
+footer{
+    text-align: center;
+    background: url("img/rodape.jpg");    
+
+}
+footer img{
+    background-color: black;
+}
+
+.copyright{
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+
+
+form{
+    margin: 40px 0;
+}
+
+.posicionamento-contato{
+    display: flex;
+    justify-content: left;
+    gap: 1em;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 0 1em;
+
+}
+
+.formulario{
+    width: 600px;
+
+}
+
+form label, form legend{
+    display: block;
+    font-size: 15px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 70%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 140px;
+    padding: 15px 5px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    color: red;
+    transform: rotate(45deg) scale(1.2);
+
+}
+
+
+
+.titulo-tabela{
+    background-color: #bbbbbb;
+    font-weight: bold;
+}
+
+.funcionamento th, td{
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+
+}
+
+/*CSS Homepage*/
+
+
+.principal{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
+    background-color: #fefefe;
+    
+}
+.capa{
+    width: 49%;
+    height: 400px;
+    
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0;
+    /*clear: left; limpa o float*/
+}
+
+.posicionamento-sobre{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+
+.posicionamento-sobre-texto{
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+    row-gap: 1em;
+    width: 49%;
+    font-size: 20px;
+    
+}
+
+.principal strong{
+    font-weight: bold;
+}
+.principal em{ 
+    font-style: italic;
+}
+
+.principal spam {
+    color: red;
+    font-weight: bold;
+}
+
+.itens{
+    font-style: italic;
+    font-size: 20px;
+    display: block;
+    margin: 0 0 1em;
+    /*line-height define altura da linha (em da proporcionalidade)*/
+}
+.itens:before{
+    content: "✶";
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.conteudo-diferenciais{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+.lista-diferenciais{
+    width: 49%;
+}
+.diferenciais{
+    background: #fefefe;
+    padding: 0 1em;
+
+}
+
+.img-servicos{
+    width: 49%;
+    height: 400px;
+    box-shadow: 10px 10px 20px 10px black;
+    transition: 0.5s;
+}
+.img-servicos:hover{
+    opacity: 0.5;
+
+
+}
+
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe,#888888);
+
+}
+.mapa-conteudo{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
+    
+
+}
+.mapa p{
+    margin: 0 0 1em;
+    text-align: center;
+}
+
+/* adaptando responsividade */
+@media screen and (max-width: 845px) {
+    
+    .caixa:first-child{
+        text-align: center;
+        width: auto;
+    }
+    
+    
+    .lista-diferenciais, .img-servicos, .capa, .posicionamento-sobre-texto {
+        width: 100%;
+    }
+    
+}
